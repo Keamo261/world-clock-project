@@ -8,17 +8,28 @@ h2 {
   font-size: 28px;
 }
 body {
-  background-color: lightcyan;
-  color: teal;
+  background: linear-gradient(
+    109.6deg,
+    rgb(204, 228, 247) 11.2%,
+    rgb(237, 246, 250) 100.2%
+  );
+  color: #00204a;
   font-family: sans-serif;
+}
+a {
+  color: #00204a;
 }
 footer {
   text-align: center;
 }
+select {
+  background-color: #e4f1fe;
+  color: #00204a;
+}
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-color: lightblue;
+  background: linear-gradient(-225deg, #5d9fff 0%, #b8dcff 48%, #6bbbff 100%);
   padding: 60px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
@@ -28,7 +39,7 @@ footer {
   justify-content: space-between;
   margin: 10px 0;
   padding: 30px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 1px dashed #e4f1fe;
 }
 .time {
   font-size: 36px;

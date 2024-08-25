@@ -1,29 +1,43 @@
 function updateTime() {
-  //Sydney
-  let sydneyElement = document.querySelector("#sydney");
-  if (sydneyElement) {
-    let sydneyDate = sydneyElement.querySelector(".date");
-    let sydneyTimeElement = sydneyElement.querySelector(".time");
-    let sydneyTime = moment().tz("Australia/Sydney");
+  //Casablanca
+  let casablancaElement = document.querySelector("#casablanca");
+  if (casablancaElement) {
+    let casablancaDate = casablancaElement.querySelector(".date");
+    let casablancaTimeElement = casablancaElement.querySelector(".time");
+    let casablancaTime = moment().tz("Africa/Casablanca");
 
-    sydneyDate.innerHTML = sydneyTime.format("MMMM Do, YYYY");
-    sydneyTimeElement.innerHTML = sydneyTime.format(
+    casablancaDate.innerHTML = casablancaTime.format("MMMM Do, YYYY");
+    casablancaTimeElement.innerHTML = casablancaTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
 
-  //LA
-  let laElement = document.querySelector("#la");
-  if (laElement) {
-    let laDate = laElement.querySelector(".date");
-    let laTimeElement = laElement.querySelector(".time");
-    let laTime = moment().tz("America/Los_Angeles");
+  //Barbados
+  let barbadosElement = document.querySelector("#barbados");
+  if (barbadosElement) {
+    let barbadosDate = barbadosElement.querySelector(".date");
+    let barbadosTimeElement = barbadosElement.querySelector(".time");
+    let barbadosTime = moment().tz("America/Barbados");
 
-    laDate.innerHTML = laTime.format("MMMM Do, YYYY");
-    laTimeElement.innerHTML = laTime.format("h:mm:ss [<small>]A[</small>]");
+    barbadosDate.innerHTML = barbadosTime.format("MMMM Do, YYYY");
+    barbadosTimeElement.innerHTML = barbadosTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  //Macao
+  let macaoElement = document.querySelector("#macao");
+  if (macaoElement) {
+    let macaoDate = macaoElement.querySelector(".date");
+    let macaoTimeElement = macaoElement.querySelector(".time");
+    let macaoTime = moment().tz("Asia/Macao");
+
+    macaoDate.innerHTML = macaoTime.format("MMMM Do, YYYY");
+    macaoTimeElement.innerHTML = macaoTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
   }
 }
-
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
@@ -41,7 +55,9 @@ function updateCity(event) {
           <div class="time">${cityTime.format(
             "h:mm:ss"
           )} <small>${cityTime.format("A")}</small></div>
-        </div> `;
+        </div> 
+        <a href="index.html">All Cities</a>
+        `;
 }
 
 updateTime();
