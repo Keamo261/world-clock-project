@@ -1,10 +1,51 @@
 h1 {
   text-align: center;
+  font-family: sans-serif;
+  font-size: 36px;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 28px;
 }
 body {
-  background-color: lavender;
-  color: purple;
+  background-color: lightcyan;
+  color: teal;
+  font-family: sans-serif;
 }
 footer {
   text-align: center;
+}
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: lightblue;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+}
+.time {
+  font-size: 36px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 18px;
+  line-height: 36px;
+  vertical-align: middle;
+}
+select {
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 18px;
+}
+.date {
+  opacity: 0.7;
 }
