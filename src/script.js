@@ -24,19 +24,6 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-
-  //Macao
-  let macaoElement = document.querySelector("#macao");
-  if (macaoElement) {
-    let macaoDate = macaoElement.querySelector(".date");
-    let macaoTimeElement = macaoElement.querySelector(".time");
-    let macaoTime = moment().tz("Asia/Macao");
-
-    macaoDate.innerHTML = macaoTime.format("MMMM Do, YYYY");
-    macaoTimeElement.innerHTML = macaoTime.format(
-      "h:mm:ss [<small>]A[</small>]"
-    );
-  }
 }
 function updateCity(event) {
   let cityTimeZone = event.target.value;
